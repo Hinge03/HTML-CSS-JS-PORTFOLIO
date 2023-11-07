@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">PortFolio</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">PortFolio</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="pic-container">
+            <img src="./assets/profile.png" alt="Nikhil Hinge picture" />
+        </div>
+        <div class="text">
+            <p class="text-p1">Hello, I'm</p>
+            <h1 class="title">Nikhil Hinge</h1>
+            <p class="text-p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-c1" target="_blank" onclick="window.open('./assets/Resume.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btn-c2" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="linkedin profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/nikhil-hinge-5b63aa225/'" />
+                <img src="./assets/github.png" alt="github profile" class="icon"
+                    onclick="location.href='https://github.com/Hinge03'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="text-p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="pic-container">
+                <img src="./assets/nikhil.png" alt="profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>
+                            Vocational Training
+                            <br />
+                            Frontend Developer
+                        </p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>
+                            B.Tech Engineer,<br />At Walchand Institute of Technology,<br />Solapur,<br />Maharashtra.
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Greetings! I'm Nikhil Hinge, and I'm currently pursuing my
+                        engineering degree. As an interactive student of technology and
+                        engineering, I'm excited to share my experiences and projects with
+                        you. Throughout my B.Tech journey, I've been privileged to
+                        explore various aspects of technology, from programming to
+                        robotics, and I've been actively involved in numerous projects
+                        that have expanded my knowledge. As a student, I'm interested to
+                        acquire more knowledge but also apply it to real-world challenges.
+                        The basic knowledge of web development that I have, helped me to
+                        develop a great understanding of Web development and I'm
+                        constantly seeking opportunities to apply my skills to create
+                        innovative projects. I'm always open to connect with students,
+                        mentors, and tech enthusiasts whether it's about discussing the
+                        latest trends in technology or exploring more things in the
+                        technical world.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    <section id="experience">
+        <p class="text-p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="e-detail-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="sub-title">Frontend Developer</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="sub-title">Other Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>C</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>DSA</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon" />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="text-p1">Browse My recents</p>
+        <h1 class="title">Projects</h1>
+        <div class="e-detail-container">
+            <div class="about-container">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/Timetable.png" alt="project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project 1</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-c2 project-btn"
+                            onclick="location.href='https://github.com/Hinge03/Timetable'">
+                            Github
+                        </button>
+                        <button class="btn btn-c2 project-btn"
+                            onclick="location.href='https://calm-profiterole-b0d105.netlify.app'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/form.png" alt="project 2" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project 2</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-c2 project-btn"
+                            onclick="location.href='https://github.com/Hinge03/Registration-form'">
+                            Github
+                        </button>
+                        <button class="btn btn-c2 project-btn"
+                            onclick="location.href='https://precious-trifle-001954.netlify.app/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/result.png" alt="project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project 3</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-c2 project-btn"
+                            onclick="location.href='https://github.com/Hinge03/Result-sheet'">
+                            Github
+                        </button>
+                        <button class="btn btn-c2 project-btn"
+                            onclick="location.href='https://stirring-belekoy-3d506a.netlify.app'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon" />
+                <p>
+                    <a href="mailto:hingenikhil606@gmail.com">hingenikhil606@gmail.com</a>
+                </p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/phone.png" alt="phone icon" class="icon contact-icon" />
+                <p><a href="tel:+91 9764191003">+91 9764191003</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Nikhil Hinge. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
